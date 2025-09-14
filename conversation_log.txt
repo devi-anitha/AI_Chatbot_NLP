@@ -1,0 +1,96 @@
+[2025-06-14 16:02:30.051619] You: hi
+[2025-06-14 16:02:30.051619] Bot: Hello!
+
+[2025-06-14 16:02:58.171955] You: give names of some flowers
+[2025-06-14 16:02:58.171955] Bot: Rose, Tulip, Lily, Jasmine, Sunflower.
+
+[2025-06-14 16:03:14.137634] You: hello
+[2025-06-14 16:03:14.137634] Bot: Hi there!
+
+[2025-06-14 16:03:51.337318] You: how do plant a tree
+[2025-06-14 16:03:51.337318] Bot: In botany, a tree is a perennial plant with an elongated stem, or trunk, usually supporting branches and leaves. In some usages, the definition of a tree may be narrower, e.g., including only woody plants with secondary growth, only plants that are usable as lumber, or only plants above a specified height.
+
+[2025-06-14 16:19:05.789186] You: hi
+[2025-06-14 16:19:05.789186] Bot: Hello!
+
+[2025-06-14 16:19:37.887169] You: benefits of neem tree
+[2025-06-14 16:19:37.887169] Bot: Apples are rich in fiber and good for digestion.
+
+[2025-06-14 16:19:48.591658] You: neem tree
+[2025-06-14 16:19:48.591658] Bot: I'm still learning. Can you rephrase?
+
+[2025-06-14 16:21:10.460881] You: names of fruits
+[2025-06-14 16:21:10.460881] Bot: Apple, Mango, Banana, Orange, Grapes.
+
+[2025-06-14 16:21:19.903837] You: 2484+3764-3746*63546
+[2025-06-14 16:21:19.903837] Bot: The answer is -238037068
+
+[2025-06-14 16:22:34.922405] You: what is availability
+[2025-06-14 16:22:34.922405] Bot: AI stands for Artificial Intelligence, which is the simulation of human intelligence in machines.
+
+[2025-06-14 16:22:46.326658] You: what is computer
+[2025-06-14 16:22:46.326658] Bot: A computer is a device that processes information.
+
+[2025-06-15 15:50:24.661956] You: hi
+[2025-06-15 15:50:24.661956] Bot: Hello!
+
+[2025-06-15 15:50:36.486916] You: how are you
+[2025-06-15 15:50:36.486916] Bot: I'm just a program, but I'm doing great!
+
+[2025-06-15 15:50:48.003210] You: who are you
+[2025-06-15 15:50:48.003210] Bot: I'm just a program, but I'm doing great!
+
+[2025-06-15 15:51:05.863708] You: what is wikipedia
+[2025-06-15 15:51:05.863708] Bot: AI stands for Artificial Intelligence, which is the simulation of human intelligence in machines.
+
+[2025-06-15 16:01:33.745531] You: hi
+[2025-06-15 16:01:33.745531] Bot: Hello!
+
+[2025-06-15 16:01:40.631309] You: how are you
+[2025-06-15 16:01:40.631309] Bot: I'm just a program, but I'm doing great!
+
+[2025-06-15 16:01:54.183091] You: what is wikipedia
+[2025-06-15 16:01:54.183091] Bot: AI stands for Artificial Intelligence, which is the simulation of human intelligence in machines.
+
+[2025-06-15 16:03:00.396448] You: how to plant a seed
+[2025-06-15 16:03:00.396448] Bot: In botany, a seed is a plant structure containing an embryo and stored nutrients in a protective coat called a testa. More generally, the term "seed" means anything that can be sown, which may include seed and husk or tuber.
+
+[2025-06-15 16:05:22.652888] You: explain me the process should follow to plant a seed
+[2025-06-15 16:05:22.652888] Bot: AI stands for Artificial Intelligence.
+
+[2025-06-15 16:06:02.427722] You: recipe for biryani
+[2025-06-15 16:06:02.428727] Bot: Biryani () is a mixed rice dish originating in South Asia, made with rice, meat (chicken, goat, lamb, beef) or seafood (prawns or fish), and spices. To cater to vegetarians, the meat or seafood can be substituted with vegetables or paneer.
+
+[2025-06-15 16:12:43.269354] You: hi
+[2025-06-15 16:12:43.269354] Bot: Hello!
+
+[2025-06-15 16:12:57.049629] You: what is wikipedia
+[2025-06-15 16:12:57.049629] Bot: AI stands for Artificial Intelligence, which is the simulation of human intelligence in machines.
+
+[2025-06-15 16:13:31.670393] You: biryani recipe
+[2025-06-15 16:13:31.670393] Bot: Biryani () is a mixed rice dish originating in South Asia, made with rice, meat (chicken, goat, lamb, beef) or seafood (prawns or fish), and spices. To cater to vegetarians, the meat or seafood can be substituted with vegetables or paneer.
+
+[2025-06-15 16:15:01.503707] You: hello
+[2025-06-15 16:15:01.503707] Bot: Hi there!
+
+[2025-06-15 16:15:11.666005] You: what is wikipedia
+[2025-06-15 16:15:11.666005] Bot: AI stands for Artificial Intelligence, which is the simulation of human intelligence in machines.
+
+[2025-06-15 16:16:07.207340] You: biryani recipe
+[2025-06-15 16:16:07.207340] Bot: Biryani () is a mixed rice dish originating in South Asia, made with rice, meat (chicken, goat, lamb, beef) or seafood (prawns or fish), and spices. To cater to vegetarians, the meat or seafood can be substituted with vegetables or paneer.
+
+[2025-06-15 16:16:50.764441] You: explain in steps
+[2025-06-15 16:16:50.764441] Bot: AI stands for Artificial Intelligence.
+
+[2025-06-15 16:17:09.043312] You: explain how to make biryani in step by step
+[2025-06-15 16:17:09.043312] Bot: AI stands for Artificial Intelligence.
+
+[2025-06-15 16:51:06.930961] You: what is java
+[2025-06-15 16:51:06.930961] Bot: AI stands for Artificial Intelligence, which is the simulation of human intelligence in machines.
+
+[2025-06-15 16:51:17.057918] You: java
+[2025-06-15 16:51:17.057918] Bot: Japan is an island country in East Asia. Located in the Pacific Ocean off the northeast coast of the Asian mainland, it is bordered on the west by the Sea of Japan and extends from the Sea of Okhotsk in the north to the East China Sea in the south.
+
+[2025-06-15 16:51:45.564633] You: python
+[2025-06-15 16:51:45.564633] Bot: Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
+

@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey"],
+      "responses": ["Hello!", "Hi","hey there!"]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": ["how are you", "how are you doing?"],
+      "responses": ["I'm fine, thank you!", "Doing great, thanks for asking!"]
+    },
+    {
+      "tag": "name",
+      "patterns": ["what's your name?", "who created you?"],
+      "responses": ["I'm a chatbot created by Anitha."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "see you", "goodbye"],
+      "responses": ["See you later!", "Goodbye!"]
+    },
+    {
+      "tag": "identity",
+      "patterns": ["who are you?", "what are you?"],
+      "responses": ["I'm your AI chatbot friend."]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["tell me a joke", "say a joke", "make me laugh"],
+      "responses": ["Why don’t scientists trust atoms? Because they make up everything!"]
+    }
+  ]
+}

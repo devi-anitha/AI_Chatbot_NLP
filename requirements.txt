@@ -1,0 +1,12 @@
+tensorflow==2.10.0
+numpy
+pandas
+nltk
+tqdm
+scikit-learn
+Flask
+wikipedia
+fuzzywuzzy
+python-Levenshtein
+SpeechRecognition
+pyttsx3
