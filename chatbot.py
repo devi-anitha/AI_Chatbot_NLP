@@ -4,7 +4,7 @@ import random
 import numpy as np
 import pandas as pd
 from fuzzywuzzy import fuzz
-from flask import Flask, request, render_template_string
+from flask import Flask, request, render_template, jsonify
 try:
     import wikipedia
 except ImportError:
@@ -141,70 +141,29 @@ def get_chatbot_response(user_input):
 # --- FLASK WEB APP ---
 app = Flask(__name__)
 
-HTML_TEMPLATE = """
-<!DOCTYPE html>
-<html>
-<head>
-    <title>AI Chatbot</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; display: flex; justify-content: center; }
-        .chat-container { width: 100%; max-width: 600px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 20px; display: flex; flex-direction: column; height: 80vh; }
-        .chat-history { flex-grow: 1; overflow-y: auto; padding: 10px; border: 1px solid #ddd; border-radius: 8px; background: #fafafa; margin-bottom: 20px; }
-        .message { margin: 10px 0; padding: 12px 16px; border-radius: 20px; max-width: 80%; word-wrap: break-word; }
-        .user { background: #0084ff; color: white; align-self: flex-end; margin-left: auto; border-bottom-right-radius: 4px; }
-        .bot { background: #e4e6eb; color: black; align-self: flex-start; margin-right: auto; border-bottom-left-radius: 4px; }
-        form { display: flex; gap: 10px; }
-        input[type="text"] { flex-grow: 1; padding: 12px; border: 1px solid #ccc; border-radius: 20px; font-size: 16px; outline: none; }
-        button { padding: 12px 24px; border: none; background: #0084ff; color: white; border-radius: 20px; cursor: pointer; font-size: 16px; transition: background 0.2s; }
-        button:hover { background: #0073e6; }
-        .message-wrapper { display: flex; flex-direction: column; }
-    </style>
-</head>
-<body>
-    <div class="chat-container">
-        <h2 style="text-align: center; margin-top: 0;">🤖 AI Chatbot</h2>
-        <div class="chat-history" id="chat-history">
-            {% for sender, msg in history %}
-                <div class="message-wrapper">
-                    <div class="message {{ 'user' if sender == 'You' else 'bot' }}">
-                        {{ msg }}
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-        <form method="POST">
-            <input type="text" name="message" placeholder="Type your message..." required autocomplete="off" autofocus>
-            <button type="submit">Send</button>
-        </form>
-    </div>
-    <script>
-        // Auto-scroll to bottom
-        var historyDiv = document.getElementById("chat-history");
-        historyDiv.scrollTop = historyDiv.scrollHeight;
-    </script>
-</body>
-</html>
-"""
-
-chat_history = []
-
-@app.route("/", methods=["GET", "POST"])
+@app.route("/", methods=["GET"])
 def home():
     try:
-        if request.method == "POST":
-            user_msg = request.form.get("message")
-            if user_msg and user_msg.strip():
-                try:
-                    bot_response = get_chatbot_response(user_msg.strip())
-                except Exception:
-                    bot_response = "Oops, something went wrong on my end. Please try again."
-                
-                chat_history.append(("You", user_msg.strip()))
-                chat_history.append(("Bot", bot_response))
-        
-        return render_template_string(HTML_TEMPLATE, history=chat_history)
+        return render_template("index.html")
     except Exception as e:
-        return f"<h3>Application Error</h3><p>{e}</p>"
+        return f"<h3>Application Error</h3><p>Could not load frontend. Ensure 'templates/index.html' exists. Error: {e}</p>"
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    try:
+        data = request.get_json()
+        if not data or "message" not in data:
+            return jsonify({"response": "Oops, skipped empty message."}), 400
+        
+        user_msg = data.get("message", "").strip()
+        if not user_msg:
+            return jsonify({"response": "Please provide a valid message."}), 400
+            
+        bot_response = get_chatbot_response(user_msg)
+        return jsonify({"response": bot_response})
+    except Exception as e:
+        print(f"Error in /chat endpoint: {e}")
+        return jsonify({"response": "An error occurred on the server while processing your message."}), 500
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

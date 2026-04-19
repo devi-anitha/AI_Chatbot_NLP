@@ -2,26 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Smart AI Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <!-- Modern Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons for a clean, modern look -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- External stylesheet -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>🤖 AI Chatbot🤖</h1>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-content">
+                <img src="{{ url_for('static', filename='images/bot_avatar.png') }}" alt="Bot Avatar" class="header-avatar">
+                <div class="title-area">
+                    <h2>Premium AI Assistant</h2>
+                    <span class="status"><span class="dot"></span> Online</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <select id="theme-selector" class="theme-dropdown" aria-label="Theme Selector">
+                    <option value="light">☀️ Light</option>
+                    <option value="dark">🌙 Dark</option>
+                    <option value="ocean">🌊 Ocean</option>
+                    <option value="sunset">🌅 Sunset</option>
+                    <option value="glass">🔮 Glass</option>
+                </select>
+                <button id="clear-chat" class="clear-btn" aria-label="Clear chat">
+                    <i class="ph ph-trash"></i>
+                </button>
+            </div>
+        </div>
 
-        <div id="chat-box" class="chat-box"></div>
+        <!-- Chat History Window -->
+        <div class="chat-window" id="chat-window">
+            <!-- Messages will be injected here dynamically via script.js -->
+        </div>
 
-        <div class="controls">
-            <input type="text" id="userInput" placeholder="Type your message here..." autocomplete="off">
-            <button onclick="sendMessage()">Send</button>
-            <label class="switch">
-                <input type="checkbox" id="voiceToggle" onchange="toggleVoiceMode()">
-                <span class="slider"></span>
-            </label>
+        <!-- Input Area -->
+        <div class="chat-input-area">
+            <form id="chat-form">
+                <input 
+                    type="text" 
+                    id="user-input" 
+                    placeholder="Type your message..." 
+                    autocomplete="off" 
+                    autofocus
+                    required
+                >
+                <button type="submit" id="send-btn" aria-label="Send">
+                    <i class="ph ph-paper-plane-right"></i>
+                </button>
+            </form>
         </div>
     </div>
 
+    <!-- External Script -->
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
-
