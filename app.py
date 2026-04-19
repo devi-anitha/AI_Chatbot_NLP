@@ -12,14 +12,22 @@ def log_conversation(user_input, bot_response):
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    try:
+        return render_template("index.html")
+    except Exception as e:
+        return f"Error loading frontend: {str(e)}"
 
 @app.route("/get", methods=["POST"])
 def chatbot_reply():
-    user_input = request.json.get("message")
-    bot_response = get_chatbot_response(user_input)
-    log_conversation(user_input, bot_response)
-    return jsonify({"response": bot_response})
+    try:
+        user_input = request.json.get("message")
+        if not user_input:
+            return jsonify({"response": "Please provide a message."})
+        bot_response = get_chatbot_response(user_input)
+        log_conversation(user_input, bot_response)
+        return jsonify({"response": bot_response})
+    except Exception as e:
+        return jsonify({"response": "Oops, something went wrong. Try again."})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
