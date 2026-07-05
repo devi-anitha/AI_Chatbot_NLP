@@ -94,3 +94,24 @@
 [2025-06-15 16:51:45.564633] You: python
 [2025-06-15 16:51:45.564633] Bot: Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
 
+[2026-07-05 16:26:12.709129] You: hi
+[2026-07-05 16:26:12.709164] Bot: Hello!
+
+[2026-07-05 16:26:19.650689] You: name some fruits
+[2026-07-05 16:26:19.650720] Bot: Apple, Mango, Banana, Orange, Grapes.
+
+[2026-07-05 16:26:25.171461] You: how are you
+[2026-07-05 16:26:25.171505] Bot: I'm just a program, but I'm doing great!
+
+[2026-07-05 16:26:40.270777] You: explain about india's history
+[2026-07-05 16:26:40.270807] Bot: I can explain complex concepts in simpler terms.
+
+[2026-07-05 16:26:59.066371] You: ok continue
+[2026-07-05 16:26:59.066414] Bot: OK ( ), with spelling variations including okay, O.K. and many others, is an English word (originating in American English) denoting approval, acceptance, agreement, assent, acknowledgment, or a sign of indifference. OK is frequently used as a loanword in other languages.
+
+[2026-07-05 16:27:31.601395] You: india's history
+[2026-07-05 16:27:31.601411] Bot: nan
+
+[2026-07-05 16:27:49.069796] You: explain about newton's laws
+[2026-07-05 16:27:49.069841] Bot: Newton's laws describe motion and forces.
+
