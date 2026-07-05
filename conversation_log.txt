@@ -115,3 +115,12 @@
 [2026-07-05 16:27:49.069796] You: explain about newton's laws
 [2026-07-05 16:27:49.069841] Bot: Newton's laws describe motion and forces.
 
+[2026-07-05 17:08:01.996481] You: hi
+[2026-07-05 17:08:01.996507] Bot: Hello!
+
+[2026-07-05 17:08:07.902930] You: how are you
+[2026-07-05 17:08:07.902976] Bot: I'm just a program, but I'm doing great!
+
+[2026-07-05 17:08:14.981772] You: oceans
+[2026-07-05 17:08:14.981804] Bot: An ocean is a very large expanse of sea.
+
