@@ -1,12 +1,13 @@
-tensorflow==2.20.0
+Flask
 numpy
 pandas
 nltk
-tqdm
 scikit-learn
-Flask
+tqdm
 wikipedia
 fuzzywuzzy
 python-Levenshtein
 SpeechRecognition
 pyttsx3
+requests
+beautifulsoup4
