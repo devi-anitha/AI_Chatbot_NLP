@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request, jsonify
 from chatbot import get_chatbot_response
 import datetime
+import os
 
 app = Flask(__name__)
 
@@ -30,4 +31,8 @@ def chatbot_reply():
         return jsonify({"response": "Oops, something went wrong. Try again."})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
