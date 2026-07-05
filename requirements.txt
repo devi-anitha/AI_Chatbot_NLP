@@ -11,3 +11,4 @@ SpeechRecognition
 pyttsx3
 requests
 beautifulsoup4
+gunicorn
